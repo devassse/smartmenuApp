@@ -1,0 +1,160 @@
+.logo {
+  width: 10rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: swing 2s ease-in-out infinite;
+  transform-origin: center top;
+}
+
+/*----------------------------------------*/
+/*          MAIN CONTENT                  */
+/*----------------------------------------*/
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.servings {
+  padding: 1rem 2rem;
+}
+
+.servings header {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+}
+
+.servings h2 {
+  font-size: 3.8rem;
+  font-family: "MonteCarlo", cursive;
+}
+
+.servings p {
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+.servings:nth-child(odd) {
+  border-bottom: 1px dashed #4c2626;
+}
+
+.servings:nth-child(even) {
+  border-left: 1px dashed #251313;
+  ;
+  border-bottom: 1px dashed #4c2626;
+}
+
+/* The child before the Last */
+.servings:nth-last-of-type(2) {
+  border-bottom: 1px solid transparent;
+}
+
+/* Last Child */
+.servings:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.category {
+  margin-top: 3rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 10px;
+}
+
+.item img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.item-description {
+  color: #ffffff;
+  font-size: 0.95em;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+/*----------------------------------------*/
+/*                FOOTER                  */
+/*----------------------------------------*/
+footer {
+  text-align: center;
+  padding-bottom: 2px;
+  color: #fff;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+  animation: zoomInOut 2s infinite;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes zoomInOut {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+}
