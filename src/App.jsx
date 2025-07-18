@@ -162,6 +162,32 @@ function App() {
                 <div class="item-price">MZN 750</div>
               </div>
             </div>
+            <div className="item">
+              <img
+                src={general}
+                alt="General Food Ilustration"
+              />
+              <div class="item-details">
+                <div class="item-title">Frango à Zambeziana</div>
+                <div class="item-description">
+                  Peito de frango com leite de coco e arroz ou batata.
+                </div>
+                <div class="item-price">MZN 780</div>
+              </div>
+            </div>
+            <div className="item">
+              <img
+                src={general}
+                alt="General Food Ilustration"
+              />
+              <div class="item-details">
+                <div class="item-title">Carril de Vitela Molhada</div>
+                <div class="item-description">
+                  Carne de Vaca menor, salada e arroz branco.
+                </div>
+                <div class="item-price">MZN 1050</div>
+              </div>
+            </div>
           </div>
         </article>
         <article className="servings">
