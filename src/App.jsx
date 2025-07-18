@@ -5,11 +5,13 @@ import sumonaturalimg from './assets/sumonatural.jpg'
 import heineken from './assets/heineken.jpg'
 import cdm from './assets/cdm.jpeg'
 import general from './assets/general.jpg'
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <>
+      <Header />
       <section className="main-container">
         {/* <Articles /> */}
         <article className="servings">
@@ -46,6 +48,9 @@ function App() {
                 <div class="item-price">MZN 90</div>
               </div>
             </div>
+            <div className="view-more-options">
+              <a href="#">Ver mais ...</a>
+            </div>
           </div>
         </article>
         <article className="servings">
@@ -80,6 +85,9 @@ function App() {
                 <div class="item-price">MZN 350</div>
               </div>
             </div>
+          </div>
+          <div className="view-more-options">
+            <a href="#">Ver mais ...</a>
           </div>
         </article>
         <article className="servings">
@@ -127,6 +135,9 @@ function App() {
                 <div class="item-price">MZN 800</div>
               </div>
             </div>
+          </div>
+          <div className="view-more-options">
+            <a href="#">Ver mais ...</a>
           </div>
         </article>
         <article className="servings">
@@ -189,6 +200,9 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="view-more-options">
+            <a href="#">Ver mais ...</a>
+          </div>
         </article>
         <article className="servings">
           <header>
@@ -209,6 +223,9 @@ function App() {
                 <div class="item-price">MZN 300</div>
               </div>
             </div>
+          </div>
+          <div className="view-more-options">
+            <a href="#">Ver mais ...</a>
           </div>
         </article>
         <article className="servings">
@@ -250,6 +267,9 @@ function App() {
                 <div class="item-price">MZN 120</div>
               </div>
             </div>
+          </div>
+          <div className="view-more-options">
+            <a href="#">Ver mais ...</a>
           </div>
         </article>
       </section>
